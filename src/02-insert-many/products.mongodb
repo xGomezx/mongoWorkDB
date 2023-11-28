@@ -1,0 +1,122 @@
+// products.mongodb
+
+use("pet_store")
+
+
+db.products.drop() // elimina los documentos creados en la colleccion anteriormente
+
+db.products.insertMany([
+  {
+    _id: 1,
+    name: "Prodcut 1",
+    price: 100
+  },
+  {
+    _id: 2,
+    name: "Prodcut 2",
+    price: 20
+  },
+  {
+    _id: 3,
+    name: "Prodcut 3",
+    price: 120
+  },
+  {
+    _id: 4,
+    name: "Prodcut 4",
+    price: 120
+  }
+])
+
+db.products.insertMany([
+  {
+    _id: 5,
+    title: "Producto 1",
+    price: 20000,
+    description: "Descripcion 1",
+    category: "Comida para mascotas",
+    image: "https://example.com/images/dog-food.jpg",
+  },
+  {
+    _id: 6,
+    title: "Producto 2",
+    price: 22000,
+    description: "Descripcion 2",
+    category: "Jueguete para mascotas",
+    image: "https://example.com/images/juguetes.jpg",
+  },
+  {
+    _id: 7,
+    title: "Producto 3",
+    price: 21000,
+    description: "Descripcion 3",
+    category: "Comida para mascotas",
+    image: "https://example.com/images/dog-food.jpg",
+  },
+  {
+    _id: 8,
+    title: "Producto 4",
+    price: 24000,
+    description: "Descripcion 4",
+    category: "Jueguete para mascotas",
+    image: "https://example.com/images/juguetes.jpg",
+  },
+  {
+    _id: 9,
+    title: "Producto 5",
+    price: 20400,
+    description: "Descripcion 5",
+    category: "Comida para mascotas",
+    image: "https://example.com/images/dog-food.jpg",
+  },
+  {
+    _id: 10,
+    title: "Producto 6",
+    price: 22400,
+    description: "Descripcion 6",
+    category: "Jueguete para mascotas",
+    image: "https://example.com/images/juguetes.jpg",
+  },
+  {
+    _id: 11,
+    title: "Producto 7",
+    price: 21400,
+    description: "Descripcion 7",
+    category: "Comida para mascotas",
+    image: "https://example.com/images/dog-food.jpg",
+  },
+  {
+    _id: 12,
+    title: "Producto 8",
+    price: 24340,
+    description: "Descripcion 8",
+    category: "Jueguete para mascotas",
+    image: "https://example.com/images/juguetes.jpg",
+  },
+  {
+    _id: 13,
+    title: "Producto 9",
+    price: 22500,
+    description: "Descripcion 9",
+    category: "Jueguete para mascotas",
+    image: "https://example.com/images/juguetes.jpg",
+  },
+  {
+    _id: 14,
+    title: "Producto 10",
+    price: 21400,
+    description: "Descripcion 10",
+    category: "Comida para mascotas",
+    image: "https://example.com/images/dog-food.jpg",
+  },
+  {
+    _id: 15,
+    title: "Producto 11",
+    price: 24340,
+    description: "Descripcion 11",
+    category: "Jueguete para mascotas",
+    image: "https://example.com/images/juguetes.jpg",
+  },
+]);
+  
+
