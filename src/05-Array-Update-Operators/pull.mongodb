@@ -1,0 +1,18 @@
+
+use("pet_store")
+
+//se ejecuta primero para: remove one element from array
+ db.inventory.updateMany({}, {
+   $pull: {
+     tags: "book"
+   }
+})
+
+// luego se inclute esta para: remove others elements from array
+db.inventory.updateMany({}, {
+  $pull: {
+    tags: {
+      $in: ["appliance", "school"]
+    }
+  }
+})
