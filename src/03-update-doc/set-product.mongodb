@@ -1,0 +1,119 @@
+// set-product.mongodb
+
+use("pet_store")
+
+db.products.updateOne(
+  // query
+  {_id: 1},
+  // change => operators
+  {
+    $set: {
+      name: 'Change name',
+      price: 3000,
+    }
+  }
+)
+
+
+db.products.updateOne(
+    //query
+    {_id:5},
+    {
+        $set:{
+            title: 'producto 5',
+            price: 10000
+        }
+    }
+)
+db.products.updateOne(
+    {_id:6},
+    {
+        $set:{
+            title: 'producto 6',
+            price: 15000
+        }
+    }
+)
+db.products.updateOne(
+    {_id:7},
+    {
+        $set:{
+            title: 'producto 7',
+            price: 29000
+        }
+    }
+)
+db.products.updateOne(
+    {_id:8},
+    {
+        $set:{
+            title: 'producto 8',
+            price: 32000
+        }
+    }
+)
+db.products.updateOne(
+    {_id:9},
+    {
+        $set:{
+            title: 'producto 9',
+            price: 25000
+        }
+    }
+)
+db.products.updateOne(
+    {_id:10},
+    {
+        $set:{
+            title: 'producto 10',
+            price: 39000
+        }
+    }
+)
+db.products.updateOne(
+    {_id:11},
+    {
+        $set:{
+            title: 'producto 11',
+            price: 37000
+        }
+    }
+)
+db.products.updateOne(
+    {_id:12},
+    {
+        $set:{
+            title: 'producto 12',
+            price: 28000
+        }
+    }
+)
+db.products.updateOne(
+    {_id:13},
+    {
+        $set:{
+            title: 'producto 13',
+            price: 21500
+        }
+    }
+)
+db.products.updateOne(
+    {_id:14},
+    {
+        $set:{
+            title: 'producto 14',
+            price: 39700
+        }
+    }
+)
+db.products.updateOne(
+    {_id:15},
+    {
+        $set:{
+            title: 'producto 15',
+            price: 21200
+        }
+    }
+)
+
+
